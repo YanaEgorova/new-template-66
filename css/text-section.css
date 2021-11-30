@@ -1,0 +1,61 @@
+.text-section {
+    padding: 5rem 0;
+}
+.text-section .container {
+    position: relative;
+}
+.text-section .text svg {
+    fill: #000;
+    width: 3rem;
+}
+.text-section .text {
+    margin-bottom: 1.5rem;
+}
+.text-section .title {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+.text-section .bold {
+    font-family: var(--title-font);
+    font-size: 2.2rem;
+    text-decoration: none;
+}
+.text-section .up {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+.text-section .italic {
+    font-style: italic;
+}
+.text-section .link, .link {
+   color: var(--accent-color);
+   position: relative;
+}
+.text-section .link:after, .link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: .1rem;
+    left: 50%;
+    position: absolute;
+    background: var(--accent-color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.text-section .link:hover:after, .link:hover:after {
+    width: 100%; 
+  left: 0; 
+}
+.text-section__df {
+    display: flex;
+    align-items: center;
+}
+.text-section__mr {
+    margin-right: 1rem;
+}
+@media screen and (min-width: 768px) {
+    .text-section {
+        padding: 15rem 0;
+    }
+}

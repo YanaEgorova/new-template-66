@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Red Hat Mono Bold';
+    src: url('../fonts/RedHatMono-Bold.eot');
+    src: url('../fonts/RedHatMono-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RedHatMono-Bold.woff2') format('woff2'),
+        url('../fonts/RedHatMono-Bold.woff') format('woff'),
+        url('../fonts/RedHatMono-Bold.ttf') format('truetype'),
+        url('../fonts/RedHatMono-Bold.svg#RedHatMono-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Mono';
+    src: url('../fonts/RedHatMono-Regular.eot');
+    src: url('../fonts/RedHatMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RedHatMono-Regular.woff2') format('woff2'),
+        url('../fonts/RedHatMono-Regular.woff') format('woff'),
+        url('../fonts/RedHatMono-Regular.ttf') format('truetype'),
+        url('../fonts/RedHatMono-Regular.svg#RedHatMono-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka One';
+    src: url('../fonts/FredokaOne-Regular.eot');
+    src: url('../fonts/FredokaOne-Regular.eot') format('embedded-opentype'),
+        url('../fonts/FredokaOne-Regular.woff2') format('woff2'),
+        url('../fonts/FredokaOne-Regular.woff') format('woff'),
+        url('../fonts/FredokaOne-Regular.ttf') format('truetype'),
+        url('../fonts/FredokaOne-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+.thank-you {
+    padding: 35rem 0;
+    text-align: center;
+}
+.thank-you .block {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.thank-you .img {
+    max-width: 60rem;
+    margin-bottom: 5rem;
+}
