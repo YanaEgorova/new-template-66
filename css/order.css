@@ -98,6 +98,7 @@
     font-size: 1.8rem;
     border: none;
     background-color: var(--third-brand-color);
+    color: var(--first-brand-color);
     border-radius: 2rem;
 }
 .select {

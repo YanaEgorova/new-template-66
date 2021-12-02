@@ -118,116 +118,117 @@
             <form  class="form js_form" novalidate>
               <div class="inputs-box">
               <label class="label js_label">
-                <input type="text" class="input js_input" name="name" placeholder="First Name">
+                <input type="text" class="input js_input" data-role="required" name="first_name" placeholder="First Name">
               </label>
         
               <label class="label js_label">
-                <input type="text" class="input js_input" name="name" placeholder="Last Name">
+                <input type="text" class="input js_input" data-role="required" name="last_name" placeholder="Last Name">
               </label>
             </div>
             <div class="inputs-box">
               <label class="label js_label">
-                <input type="text" class="input js_input" name="address" placeholder="Address">
+                <input type="text" class="input js_input" data-role="address" name="address" placeholder="Address">
               </label>
               
               <label class="label js_label">
-                <input type="text" class="input js_input" name="city" placeholder="City">
+                <input type="text" class="input js_input" data-role="city" name="city" placeholder="City">
               </label>
               </div>
               <div class="inputs-box">
               <label class="label select-label js_label">
                 <select name="state" class="select js_select js_input">
                   <option selected="" disabled="">Select State</option>
-                  <option>Alabama</option>
-                  <option>Alaska</option>
-                  <option>Arizona</option>
-                  <option>Arkansas</option>
-                  <option>California</option>
-                  <option>Colorado</option>
-                  <option>Connecticut</option>
-                  <option>Delaware</option>
-                  <option>Florida</option>
-                  <option>Georgia</option>
-                  <option>Hawaii</option>
-                  <option>Idaho</option>
-                  <option>Illinois</option>
-                  <option>Indiana</option>
-                  <option>Iowa</option>
-                  <option>Kansas</option>
-                  <option>Kentucky</option>
-                  <option>Louisiana</option>
-                  <option>Maine</option>
-                  <option>Maryland</option>
-                  <option>Massachusetts</option>
-                  <option>Michigan</option>
-                  <option>Minnesota</option>
-                  <option>Mississippi</option>
-                  <option>Missouri</option>
-                  <option>Montana</option>
-                  <option>Nebraska</option>
-                  <option>Nevada</option>
-                  <option>New Hampshire</option>
-                  <option>New Jersey</option>
-                  <option>New Mexico</option>
-                  <option>New York</option>
-                  <option>North Carolina</option>
-                  <option>North Dakota</option>
-                  <option>Ohio</option>
-                  <option>Oklahoma</option>
-                  <option>Oregon</option>
-                  <option>Pennsylvania</option>
-                  <option>Rhode Island</option>
-                  <option>South Carolina</option>
-                  <option>South Dakota</option>
-                  <option>Tennessee</option>
-                  <option>Texas</option>
-                  <option>Utah</option>
-                  <option>Vermont</option>
-                  <option>Virginia</option>
-                  <option>Washington</option>
-                  <option>West Virginia</option>
-                  <option>Wisconsin</option>
-                  <option>Wyoming</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
                 </select>
               </label>
               
               <label class="label js_label">
-                <input type="number" class="input js_input" name="zip_code" placeholder="Zip Code">
+                <input type="number" class="input js_input js_input-limit"  data-limit="5" data-role="zip" name="zip" placeholder="Zip Code">
               </label>
               </div>
               <div class="inputs-box">
               <label class="label js_label">
-                <input type="number" class="input js_input" name="phone" placeholder="Phone Number">
+                <input type="number" class="input js_input js_input-limit" data-limit="10" data-role="phone" name="phone" placeholder="Phone Number">
               </label>
               
               <label class="label js_label">
-                <input type="email" class="input js_input" name="email" placeholder="Email Address">
+                <input type="email" class="input js_input" data-role="email" name="email" placeholder="Email Address">
               </label>
               </div>
            
               <div class="inputs-box">
               <label class="label js_label input__card-number js_card-number-input">
-                <input type="number" class="input js_input" name="card_number" placeholder="Card Number">
+                <input type="number" class="input js_input js_input-limit" data-limit="16" data-role="card_number" name="card_number" placeholder="Card Number">
               </label>
               
               <label class="label js_label">
-                <input type="text" class="input js_input" name="name" placeholder="Card Holder">
+                <input type="text" class="input js_input" data-role="required" name="cc_name" placeholder="Card Holder">
               </label>
             </div>
             <div class="inputs-box">
               <label class="label js_label">
-                <input type="text" class="input js_input" name="card_data" placeholder="MM / YYYY">
+                <input type="text" class="input js_input js_input-limit" data-limit="7" data-role="expiration_dt" name="expiration_dt" placeholder="MM / YYYY">
               </label>
 
 
               <label class="label js_label">
-                <input type="number" class="input js_input" name="card_cvv" placeholder="CVC">
+                <input type="number" class="input js_input js_input-limit"  data-limit="3" data-role="cvv" name="cvv" placeholder="CVC">
               </label>
             </div>
 
                 <input type="checkbox" class="input checkbox-input" id="checkbox">
                 <label for="checkbox" class="label checkbox-label">
-                  By placing an order with us, you agree to our full Terms And Conditions & Privacy Policy, which explain that you will be charged  <span class="js_total-price"></span> (No Shipping and handling costs). To cancel your order, please call our Customer Service toll free number at <a href="" class="link js_website-phone"></a> or email us at <a href="" class="link js_website-email"></a>. You will see a charge from <span class="js_website-desc"></span> on your bank statement. Our Customer Service department reserves the right to offer promo codes for varied price points.
+                  By placing an order with us, you agree to our full <a href="./purchase.html" class="link">Terms And Conditions</a> & <a href="./privacy.html" class="link">Privacy Policy</a>, which explain that you will be charged  <span class="js_total-price"></span> (No Shipping and handling costs). To cancel your order, please call our Customer Service toll free number at <a href="" class="link js_website-phone"></a> or email us at <a href="" class="link js_website-email"></a>. You will see a charge from <span class="js_website-desc"></span> on your bank statement. Our Customer Service department reserves the right to offer promo codes for varied price points.
                 </label>
                 
               
