@@ -141,14 +141,15 @@ function fieldValidation(event) {
       break;
   }
 
-  console.log('checkResult', checkResult.trim().length);
-  if(checkResult.trim().length !== 0 ) {
-    console.log('1111')
+  console.log('checkResult', field.value.trim().length);
+  // console.log('checkResult', checkResult.trim().length);
+  if(field.value.trim().length === 0) {
+    // console.log('111');
+    setError(field);
+  } else if(checkResult.trim().length !== 0 ) {
+    console.log('222')
     setError(field, checkResult);
   } 
-  // else {
-  //   setError(field);
-  // }
 }
 
 function setCardIcon(card) {
