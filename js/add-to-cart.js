@@ -54,7 +54,10 @@ function addToCart(e) {
 
     // ADD TO LOCAL STORAGE
     if (okay){
-        cartSpan.textContent = Number(cartSpan.textContent) + 1;
+        if(cartSpan) {
+            cartSpan.textContent = Number(cartSpan.textContent) + 1;
+        }
+      
         showSuccessMessage(successMessage, successMessageSpan, name);
         localStorage(productId);
     }

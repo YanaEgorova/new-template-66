@@ -17,6 +17,7 @@ let formData = new FormData(form);
 formData = formData.entries(); 
 let allFields = form.querySelectorAll('.js_input');
 let allLengthLimitedInputs = form.querySelectorAll('.js_input-limit');
+allFields = [...allFields];
 
 allFields.forEach(field => {
   field.addEventListener('focus', removeError);
@@ -228,6 +229,7 @@ function hasError(element) {
 
 function setError(field, error = 'Please fill out the field above') {
   const label = field.closest('label');
+  if(!label) return;
   const oldError = label.querySelector('.js_error-span');
   const errorSpan = document.createElement('span');
 

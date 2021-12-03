@@ -2,39 +2,24 @@ import {getLocalStorageItem} from './local-storage.js';
 import {tableRowTemplate} from './templates/table-row-template.js';
 // import {minAmount} from './calculate-total.js';
 // import {maxAmount} from './calculate-total.js';
-// const cartSpan = document.querySelector('.js_cart__span');
+const cartSpan = document.querySelector('.js_cart__span');
 const tableRow = document.querySelector('.js_table-row');
 const totalQuantity = document.querySelector('.js_total-quantity');
 const totalPrice = document.querySelectorAll('.js_total-price');
 const emptyMessage = document.querySelector('.js_empty-cart');
 const table = document.querySelector('.js_product-table');
-// const submitFormButton = document.querySelector('.js_form-submit-btn');
-
-// if(submitFormButton ) {
-//    submitFormButton.addEventListener('click', submitForm);
-// }
-
-
-
-// function submitForm(e) {
-//    e.preventDefault();
-//    localStorage.clear();
-// }
-
-
 
 
 
 window.onload = function() {
-   // cartSpan.textContent = setAmountToCartSpan();
+   if(cartSpan) {
+     cartSpan.textContent = setAmountToCartSpan();
+   }
+  
    if(tableRow && getLocalStorageItem().length > 0) {
       shopPageFunctional();
    }
-   if(document.querySelector('.js_form')) {
-      const form = document.querySelector('.js_form');
-      // console.log('form', form)
-      form.addEventListener('submit', clearLocalStorage);
-   }
+  
    if(document.querySelector('.js_prod__amount-span')) {
       const incrementAndDecrementSpan = document.querySelector('.js_prod__amount-span');
       if(Number(incrementAndDecrementSpan.textContent) > 1) {
@@ -45,13 +30,6 @@ window.onload = function() {
    }
 };
 
-function clearLocalStorage(e) {
-   e.preventDefault();
-   // console.log('click')
-   localStorage.clear();
-   showEmptyMessage();
-   // cartSpan.textContent = setAmountToCartSpan();
-}
 
 function shopPageFunctional() {
    hideEmptyMessage();
@@ -77,7 +55,9 @@ function removeItem(e) {
   const btn = e.currentTarget;
   const parent = btn.closest('.js_remove-product-parent');
   const productId = parent.getAttribute('id');
-//   cartSpan.textContent = setAmountToCartSpan();
+  if(cartSpan) {
+   cartSpan.textContent = setAmountToCartSpan();
+ }
   const updatedCart = getLocalStorageItem().filter(product => product.id !== productId);
   window.localStorage.setItem('cart', JSON.stringify(updatedCart));
   let total = 0;
