@@ -75,7 +75,7 @@ v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,
 
            <button class="accordion">SHIPPING POLICIES</button>
            <div class="panel">
-               <p class="text">Orders ship within <span class="bold">5 to 10 business days</span>.
+               <p class="text">Orders ship within <span class="bold">3 to 5 business days</span>.
                    <br><span class="bold">Tip:</span> Buying 2 products or more at the same time will save you quite a lot on shipping fees.</p>
            </div>
        </div>

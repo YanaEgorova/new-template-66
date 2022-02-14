@@ -129,7 +129,7 @@ option {
     visibility: hidden;
 }
 .checkbox-input:checked+.checkbox-label::before {
-    background-color: var(--first-brand-color);
+    background-color: var(--main-bg-color);
 }
 .checkbox-label::before {
     display: block;
@@ -141,7 +141,7 @@ option {
     border: .3rem solid var(--sub-bg-color);
     left: 0;
     top: .5rem;
-    background-color: var(--main-bg-color);
+    background-color: var(--first-brand-color);
     transition: all .3s ease-in-out;
 }
 select {
