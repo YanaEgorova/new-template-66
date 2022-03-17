@@ -115,7 +115,12 @@
                   <span>Continue Shopping</span></a>
               </div>
             </div>
-            <form  class="form js_form" novalidate>
+            <form action="php/handler.php" class="form js_form" method="POST" novalidate>
+              <input type="text" hidden name="action" id="action" value="checkout">
+              <input type="text" hidden name="management" id="management" value="nxg">
+              <input type="text" hidden name="country" value="US">
+              <input type="text" hidden name="total" id="totalField" value="">
+              <input type="text" hidden name="cart" id="cartField" value="">
               <div class="inputs-box">
               <label class="label js_label">
                 <input type="text" class="input js_input" data-role="required" name="first_name" placeholder="First Name">
@@ -205,7 +210,20 @@
                 <input type="email" class="input js_input" data-role="email" name="email" placeholder="Email Address">
               </label>
               </div>
-           
+              <div class="accept__box">
+                <p class="text">We accept:</p>
+                <ul class="accept__list">
+                  <li class="accept__item">
+                    <img src="./img/icons/discover.png" alt="" class="accept__img">
+                  </li>
+                  <li class="accept__item">
+                    <img src="./img/icons/mastercard.png" alt="" class="accept__img">
+                  </li>
+                  <li class="accept__item">
+                    <img src="./img/icons/visa.png" alt="" class="accept__img">
+                  </li>
+                </ul>
+              </div>
               <div class="inputs-box">
               <label class="label js_label input__card-number js_card-number-input">
                 <input type="number" class="input js_input js_input-limit" data-limit="16" data-role="card_number" name="card_number" placeholder="Card Number">
@@ -228,7 +246,7 @@
 
                 <input type="checkbox" class="input checkbox-input" id="checkbox">
                 <label for="checkbox" class="label checkbox-label">
-                  By placing an order with us, you agree to our full <a href="./purchase.html" class="link">Terms And Conditions</a> & <a href="./privacy.html" class="link">Privacy Policy</a>, which explain that you will be charged  <span class="js_total-price"></span> (No Shipping and handling costs). To cancel your order, please call our Customer Service toll free number at <a href="" class="link js_website-phone"></a> or email us at <a href="" class="link js_website-email"></a>. You will see a charge from <span class="js_website-desc"></span> on your bank statement. Our Customer Service department reserves the right to offer promo codes for varied price points.
+                  By placing an order with us, you agree to our full <a href="./purchase.html" class="link">Terms And Conditions</a> & <a href="./privacy.html" class="link">Privacy Policy</a>, which explain that you will be charged  <span class="js_total-price"></span> (No Shipping and handling costs. Your order will be shipped in 3-5 days via USPS). To cancel your order, please call our Customer Service toll free number at <a href="" class="link js_website-phone"></a> or email us at <a href="" class="link js_website-email"></a>. You will see a charge from <span class="js_website-desc"></span> on your bank statement. 
                 </label>
                 
               

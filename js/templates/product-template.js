@@ -57,10 +57,7 @@ v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,
        <p class="text success-message js_success-message">Success! You have added <span class="js_success-product-name"></span> to your shopping cart!</p>
        <button class="btn add__btn js_add__btn">add to cart</button>
        </div>
-       <div class="prod__payments-box">
-           <img src="./img/icons/mastercard.png" alt="" class="prod__payments-img">
-           <img src="./img/icons/visa.png" alt="" class="prod__payments-img">
-       </div>
+     
       
        <div class="prod__text-block">
        ${description(product.description)}

@@ -25,4 +25,19 @@ export const getLocalStorageItem = () => {
     }
     return [];
 }
+export const getCartFulfillment = () => {
+    let localStorageData = window.localStorage.getItem('cart');
+    if(localStorageData) {
+        let rawData = JSON.parse(localStorageData);
+        let formattedData = [];
 
+        rawData.forEach(item => {
+            let newItem = {name: item["name"], price: item["price"], quantity: item['quantity']};
+
+            formattedData.push(newItem);
+        })
+
+        return formattedData;
+    }
+    return [];
+}

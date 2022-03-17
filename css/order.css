@@ -172,6 +172,25 @@ select:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px var(--third-brand-color) inset;
   transition: background-color 5000s ease-in-out 0s;
 }
+.accept__box {
+    padding: 1rem 0;
+    text-align: left;
+}
+.accept__box .text {
+    margin-bottom: 1rem;
+}
+.accept__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 33rem;
+}
+.accept__img {
+    display: block;
+    width: 10rem;
+    height: 8rem;
+    object-fit: contain;
+}
 @media screen and (min-width: 768px)  {
     .orders__table td, .orders__table th {
         padding: 2rem;
@@ -190,7 +209,16 @@ select:-webkit-autofill {
     .orders__table-title {
         font-size: 2.4rem;
     }
-    /* .input-data-box {
-        width: 50%;
-     } */
+    .accept__box {
+        display: flex;
+        align-items: center;
+    }
+    .accept__box .text {
+        margin-bottom: 0;
+        margin-right: 5rem;
+    }
+    .accept__list {
+        flex-grow: 1;
+        max-width: 33rem;
+    }
 }
