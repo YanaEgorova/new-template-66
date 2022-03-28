@@ -6,7 +6,7 @@
   
           // print_r($_POST); die;
   
-          $_POST['gateway_id'] = -200000000;
+          $_POST['gateway_id'] = 200000000;
           $_POST['domain'] = $_SERVER['HTTP_HOST'];
           $_POST['corporation'] = 'JKT Media Group Inc';
           $_POST['management'] = 'nxg';
