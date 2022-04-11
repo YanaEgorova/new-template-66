@@ -164,6 +164,7 @@
     const menu = document.querySelector('.js_menu');
     menuBtn.addEventListener('click', () => {
       menu.classList.toggle('open-menu');
+      document.body.classList.toggle('open-menu');
     })
   </script>
 </body>

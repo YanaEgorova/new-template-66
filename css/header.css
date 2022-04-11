@@ -34,6 +34,12 @@
     font-size: 2rem;
     cursor: pointer;
 }
+body.open-menu {
+    overflow: hidden;
+}
+body.open-menu .header__btn {
+    color: #000;
+}
 .nav {
     position: absolute;
     top: 0;
@@ -51,7 +57,7 @@
     max-width: 120rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 25rem 1.6rem;
+    padding: 17rem 1.6rem;
     opacity: 0;
     transition-delay: .6s;
     transition-duration: .4s;
