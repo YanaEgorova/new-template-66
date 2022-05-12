@@ -46,17 +46,23 @@ function checkTrial(){
 
           let trial_names = document.querySelectorAll('.js_trial_name');
           let trial_prices = document.querySelectorAll('.js_trial_price');
+          let full_prices = document.querySelectorAll('.js_full_price');
 
           trial_names = [...trial_names];
           trial_prices = [...trial_prices];
+          full_prices = [...full_prices];
 
           trial_names.forEach(trial_name => {
               trial_name.textContent = product.name;
-          })
+          });
 
           trial_prices.forEach(trial_price => {
               trial_price.textContent = product.price;
-          })
+          });
+
+          full_prices.forEach(full_price => {
+              full_price.textContent = product.full_price;
+          });
       }else if (product.type == "ss") {
         ss_exists = true;
         document.querySelector('#ss_terms').style.display = 'block';

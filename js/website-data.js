@@ -1,11 +1,11 @@
-const WEBSITE_NAME = 'website name';
-const WEBSITE_URL = 'website url';
-const WEBSITE_CORP = 'website corp';
-const WEBSITE_PHONE = 'website phone';
-const WEBSITE_EMAIL = 'website email';
-const WEBSITE_ADDRESS = 'website address';
-const WEBSITE_RETURN_ADDRESS = 'website return address';
-const WEBSITE_DESCRIPTOR = 'website desc';
+export const WEBSITE_NAME = 'website name';
+export const WEBSITE_URL = 'website url';
+export const WEBSITE_CORP = 'website corp';
+export const WEBSITE_PHONE = 'website phone';
+export const WEBSITE_EMAIL = 'website email';
+export const WEBSITE_ADDRESS = 'website address';
+export const WEBSITE_RETURN_ADDRESS = 'website return address';
+export const WEBSITE_DESCRIPTOR = 'website desc';
 
 let websiteName = document.querySelectorAll('.js_website-name');
 let websiteUrl = document.querySelectorAll('.js_website-url');
